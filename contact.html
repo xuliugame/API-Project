@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bulma-0.7.2/css/bulma.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="js/jquery-confirm-master/dist/jquery-confirm.min.css">
+</head>
+<body>
+<nav class="navbar container" role="navigation" aria-label="main navigation" style="min-height: 4.25rem">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="http://www.rit.edu/" STYLE="font-size: 25px;font-weight: bold;">
+            RIT
+        </a>
+
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+           data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="index.html">
+                Home
+            </a>
+            <a class="navbar-item" href="news.html">
+                News
+            </a>
+
+            <a class="navbar-item is-active" style="color: #000;font-weight: bold;" href="contact.html">
+                Contact
+            </a>
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                    Navigate
+                </a>
+
+                <div class="navbar-dropdown">
+                    <a class="navbar-item" href="index.html#graduate">
+                        Degrees
+                    </a>
+                    <a class="navbar-item" href="index.html#minors">
+                        Minors
+                    </a>
+                    <a class="navbar-item" href="index.html#people">
+                        People
+                    </a>
+                    <a class="navbar-item" href="index.html#EMPLOYMENT">
+                        Employee
+                    </a>
+                    <a class="navbar-item" href="index.html#faculty-research">
+                        Research
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+</nav>
+
+<section class="hero  first is-medium is-warning is-bold">
+    <div class="container">
+        <div class="hero-body">
+            <p class="title">
+                Information Sciences &<br>
+                Technologies @ RIT
+            </p>
+            <p class="subtitle">
+                Scroll down to navigate
+            </p>
+        </div>
+    </div>
+</section>
+<div class="container" style="padding: 0 15px">
+
+    <form class="form" style="margin: 50px 0 0 0 ;max-width: 600px">
+        <div class="field">
+            <label class="label">Name</label>
+            <div class="control">
+                <input class="input" id="name" type="text" placeholder="Name" required>
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Email</label>
+            <div class="control">
+                <input class="input" id="email" type="email" placeholder="Email" required>
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Phone</label>
+            <div class="control">
+                <input class="input" id="phone" type="tel" placeholder="Phone">
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Message</label>
+            <div class="control">
+                <textarea class="textarea" id="message" placeholder="Message" required></textarea>
+            </div>
+        </div>
+
+
+        <div class="field ">
+            <div class="control">
+                <button class="button is-link" onclick="handleSubmit()" type="button">Submit</button>
+            </div>
+
+        </div>
+    </form>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery-confirm-master/dist/jquery-confirm.min.js"></script>
+<script src="contact.js"></script>
+</body>
+</html>
